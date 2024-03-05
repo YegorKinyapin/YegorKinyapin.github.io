@@ -1,0 +1,77 @@
+.first_slide {
+    background-color: rgb(255,255,255);
+    background-image: url('../../images/На\ главную.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 0px;
+    --light_opacity: 0.75;
+    --light_color: #ffffff;
+    --light_bg: #212121;
+    --light_radius: 0;
+    --light_padding: 20px;
+    position: relative;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+}
+.first_slide::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top:  0;
+    right:  0;
+    bottom:  0;
+    left:  0;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.6));
+    z-index:  1;
+  }
+.wrapper {
+    width: 1170px;
+    padding-bottom: 50px;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+}
+.title {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 54px;
+    font-weight: 400;
+    color: rgb(33, 33, 33);
+    line-height: 150%;
+    margin: 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.title_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.line{
+    width: 146px;
+    height: 5px;
+}
+.text {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24.8px;
+    color: #212121;
+    margin: 35px 0 25px 0;
+}
+.application {
+    width: 300px;
+    background-color: rgb(66, 66, 66);
+    font-family: Roboto, sans-serif;
+    border-radius: 0.58em;
+    line-height: 1;
+    font-size: 20px;
+    color: #fff;
+    margin: 0 auto;
+    padding: 16px 24px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    text-align: center;
+}

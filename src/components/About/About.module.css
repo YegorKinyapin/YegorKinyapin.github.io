@@ -1,0 +1,46 @@
+.about {
+    width: 1170px;
+    padding: 100px 0;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 392px 670px;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    'photo title'
+    'photo text';
+    column-gap: 40px;
+}
+/* .drill_container {
+    grid-area: photo;
+    width: 100%;
+} */
+.drill {
+    width: 392px;
+    height: 559px;
+    grid-area: photo;
+}
+.about_title_block {
+    grid-area: title;
+}
+.about_title {
+    color: #222222;;
+    font-size: 36px;
+    font-family: "Montserrat", Arial, sans-serif;
+    line-height: 50.4px;
+    font-weight: 500;
+    margin: 60px 0 30px 0;
+}
+.about_text_block {
+    grid-area: text;
+    margin-top: -150px;
+}
+.about_text {
+    color: rgb(105, 105, 105);
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    line-height: 22.4px;
+}
+.line_about {
+    width: 70px;
+    height: 2px;
+}

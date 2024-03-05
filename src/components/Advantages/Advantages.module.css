@@ -1,0 +1,103 @@
+.advantages {
+    background-color: #ffffff;
+    background-image: url('../../images/balcon.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 80px;
+    padding-bottom: 170px;
+    --tiles_radius: 0px;
+    --tiles_shadow: none;
+    --bg_color: #ffffff;
+    position: relative;
+    font-family: Roboto, sans-serif;
+}
+.advantages::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top:  0;
+    right:  0;
+    bottom:  0;
+    left:  0;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.8));
+    z-index:  1;
+    /* opacity: 0.86; */
+    /* background: linear-gradient(to bottom,#fff 0%,#fff 100%); */
+} 
+.advantages_wrapper {
+    width: 1170px;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 50px;
+}
+.various {
+    position: relative;
+    display: grid;
+    grid-template-columns: 128px auto;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    'image title'
+    'image text';
+    column-gap: 20px;
+}
+.various_title {
+    grid-area: title;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 15px 0 0 0;
+    line-height: 28px;
+    /* margin: 0 18px 18px 18px; */
+}
+.various_text {
+    grid-area: text;
+    color: rgb(105, 105, 105);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    /* margin: 0 18px 18px 18px; */
+}
+.advantages_title {
+    text-align: center;
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    font-weight: 500;
+    font-size: 36px;
+    margin: 0 0 40px 0;
+}
+.advantages_subtitle {
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.img_container {
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    border: 2px #424242 solid;
+    grid-area: image;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.qwer {
+    margin-left: 4px;
+    /* width: 75px;
+    height: 70px; */
+}
+.line_about {
+    width: 70px;
+    height: 2px;
+}
